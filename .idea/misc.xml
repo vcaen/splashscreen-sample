@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="splashscreen-sample/src/main/res/drawable-v31/splashscreen_icon.xml" value="0.43125" />
+        <entry key="splashscreen-sample/src/main/res/drawable/android.xml" value="0.45416666666666666" />
+        <entry key="splashscreen-sample/src/main/res/drawable/android_background.xml" value="0.41510416666666666" />
+        <entry key="splashscreen-sample/src/main/res/drawable/foreground.xml" value="0.45416666666666666" />
+        <entry key="splashscreen-sample/src/main/res/drawable/ic_launcher.xml" value="0.45416666666666666" />
+        <entry key="splashscreen-sample/src/main/res/drawable/splashscreen_icon.xml" value="0.24814814814814815" />
+        <entry key="splashscreen-sample/src/main/res/layout/main_activity.xml" value="0.39895833333333336" />
+        <entry key="splashscreen-sample/src/main/res/layout/main_activity_2.xml" value="0.75" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -20,11 +20,13 @@ plugins {
 }
 
 android {
+
+    compileSdkVersion 31
+
     defaultConfig {
         applicationId "com.vcaen.splashscreen.sample"
         minSdkVersion 23
-        compileSdkVersion 31
-        compileSdkPreview 'S'
+        targetSdkVersion 31
         vectorDrawables.useSupportLibrary = true
     }
 
@@ -45,7 +47,7 @@ android {
 dependencies {
 
     // Splash Screen
-    implementation "androidx.core:core-splashscreen:1.0.0-alpha01"
+    implementation "androidx.core:core-splashscreen:1.0.0-alpha02"
 
 
     // AndroidX

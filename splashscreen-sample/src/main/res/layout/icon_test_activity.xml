@@ -23,25 +23,44 @@
 
   <ImageView
       android:id="@+id/icon_background"
-      android:layout_width="192dp"
-      android:layout_height="192dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.5"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:srcCompat="@drawable/android_background" />
-  <ImageView
-      android:id="@+id/imageView"
       android:layout_width="160dp"
       android:layout_height="160dp"
-      android:layout_marginBottom="6dp"
+      android:src="@drawable/android_background"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="212dp"
+      android:layout_height="212dp"
       android:src="@drawable/android"
+      android:visibility="invisible"
       app:layout_constraintBottom_toBottomOf="@+id/icon_background"
       app:layout_constraintEnd_toEndOf="@+id/icon_background"
       app:layout_constraintStart_toStartOf="@+id/icon_background"
-      app:layout_constraintTop_toTopOf="@+id/icon_background"
-      app:srcCompat="@drawable/android" />
+      app:layout_constraintTop_toTopOf="@+id/icon_background" />
+
+  <ImageView
+      android:id="@+id/launcher"
+      android:layout_width="160dp"
+      android:layout_height="160dp"
+      android:src="@drawable/ic_launcher"
+      app:layout_constraintBottom_toBottomOf="@+id/icon_background"
+      app:layout_constraintEnd_toEndOf="@+id/icon_background"
+      app:layout_constraintStart_toStartOf="@+id/icon_background"
+      app:layout_constraintTop_toTopOf="@+id/icon_background" />
+
+  <ImageView
+      android:id="@+id/launcherBig"
+      android:layout_width="192dp"
+      android:layout_height="192dp"
+      android:src="@drawable/ic_launcher"
+      app:layout_constraintBottom_toTopOf="@+id/icon_background"
+      app:layout_constraintEnd_toEndOf="@+id/icon_background"
+      app:layout_constraintHorizontal_bias="0.531"
+      app:layout_constraintStart_toStartOf="@+id/icon_background" />
   <TextView
       android:id="@+id/textView"
       android:layout_width="wrap_content"

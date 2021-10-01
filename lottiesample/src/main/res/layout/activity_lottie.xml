@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LottieActivity">
+
+  <!-- Kind of cheating hear because I didn't aligned
+  my AVD with the Lottie animation, so I'm doing it here -->
+  <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/animationView"
+      android:layout_width="258dp"
+      android:layout_height="258dp"
+      android:layout_marginEnd="30dp"
+      android:layout_marginTop="26dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:lottie_autoPlay="false"
+      app:lottie_loop="false"
+      app:lottie_rawRes="@raw/lottie_anim" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:src="@drawable/illustration"
+      android:scaleType="centerCrop"
+      tools:visibilty="visible"
+      android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

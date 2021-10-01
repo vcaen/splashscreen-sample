@@ -1,2 +1,3 @@
 rootProject.name = 'splashscreen-sample'
 include 'splashscreen-sample'
+include ':lottiesample'

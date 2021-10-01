@@ -88,7 +88,7 @@ Set the starting Theme in your [Manifest](./src/AndroidManifest.xml):
 ### Setting up your activity
 #### Layout
 
-My [layout](src/res/layout/activity_lottie.xml) is a `ConstraintLayout`
+My [layout](src/main/res/layout/activity_lottie.xml) is a `ConstraintLayout`
 where I've set the margins and sizes to ensure that my
 `LottieAnimationView` is aligned with my icon. In practice, that's your designer job,
 but I have better coding skills than design skills so I'm doing it here.
@@ -103,6 +103,7 @@ but again, my assets are not aligned here so I have to manually set it.
       android:layout_height="258dp"
       android:layout_marginEnd="30dp"
       android:layout_marginTop="26dp"
+      ...
       app:lottie_autoPlay="false"
       app:lottie_loop="false"
       app:lottie_rawRes="@raw/lottie_anim" />

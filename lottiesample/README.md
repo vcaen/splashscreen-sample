@@ -13,7 +13,7 @@ with the splash screen. So we need a little trick.
 
 I took the Lottie file from
 [lottiefiles.com](https://lottiefiles.com/77440-graph-diagram-animation)
-and made a copy of the first frame the animation as an SVG.
+and made a copy of the first frame of the animation as an SVG.
 
 ![lottie_capture](https://user-images.githubusercontent.com/5563432/135660233-a23fed6f-30c5-4955-b801-8929f4389fc7.png?s=200)
 
@@ -48,7 +48,7 @@ dependencies {
 ```
 
 There are some other dependencies like `constraint-layout`, but they are not
-mendatory when it comes to slpash screens.
+mandatory when it comes to splash screens.
 
 ### Setting a splash screen theme
 In your [`res/values/themes.xml`](src/main/res/values/themes.xml) create a splash screen theme
@@ -62,13 +62,19 @@ In your [`res/values/themes.xml`](src/main/res/values/themes.xml) create a splas
   </style>
 ```
 
-Along with it, your normal app theme that we referenced in `postSplashScreenTheme`
+Along with it, your normal app theme that we reference in `postSplashScreenTheme`
 ```xml
  <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
     <item name="android:statusBarColor">@android:color/transparent</item>
     <item name="android:navigationBarColor">@android:color/transparent</item>
  </style>
 ```
+
+ >  #### Side Note on `windowSplashScreenAnimationDuration`:
+ >  The value given here has no impact on the **actual** duration of the animation.
+ >  The goal is to use it in the `OnExitAnimationListener` to synchronize the
+ >  splash screen icon animation with our custom animation (here our Lottie animation).
+
 
 Set the starting Theme in your [Manifest](./src/AndroidManifest.xml):
 ```xml
@@ -180,9 +186,11 @@ but again, my assets are not aligned here so I have to manually set it.
 ```
 
 # Questions/Issues/Contributions
-You can DM me on twitter @vadimcaen if you have some questions. If you notice any issue, fell free to make a PR.
+You can DM me on twitter @vadimcaen if you have some questions. If you notice any issue, feel free to make a PR.
 
 # Credit
 
 Lottie Animation courtesy of Agung Hermansyah\
 https://lottiefiles.com/77440-graph-diagram-animation
+
+

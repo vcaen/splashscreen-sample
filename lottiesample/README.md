@@ -31,6 +31,23 @@ Finally I synchronize the end of the splash screen animation with the start
 of the lottie animation and manually dismiss the system splash screen to seamlessly
 transition from it to my Lottie activity.
 
+## The disclaimer
+**Don't do that. It's fun but it's bad, really bad. Why?**
+
+Your users want to use your app as quickly as possible and letting them 
+wait on a beautiful but useless animation is against good UX.
+On Android 12, the native splash screen runs in the system ui process, 
+before your app's process even starts. This make you app launch _feel_ faster
+since there is an immediate feedback after the user's click and _while_ your application load.
+
+_Then why did you made this guide?_
+
+Because it was fun, it was a nice way to show off the API and people 
+like Lottie. But again, if you don't need it, don't do it. :)
+
+You appliation start should be as fast as possible and the splash screen 
+should be dismissed as soon as you have some content to display.
+
 ## The actual story
 
 ### Setting things up in [build.gradle](./build.gradle)

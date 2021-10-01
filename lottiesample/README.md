@@ -1,4 +1,4 @@
-# New Android Splash Screen API with Lottie integration
+# Using AndroidX [core-splashscreen](https://developer.android.com/reference/kotlin/androidx/core/splashscreen/package-summary) with Lottie integration
 
 | Android 12 | Android 10 |
 |------------|-------------|

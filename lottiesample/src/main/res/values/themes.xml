@@ -9,7 +9,7 @@
   <style name="Theme.Starting" parent="Theme.SplashScreen">
     <item name="windowSplashScreenBackground">#FFFFFF</item>
     <item name="windowSplashScreenAnimatedIcon">@drawable/animated_lottie</item>
-    <item name="windowSplashScreenAnimationDuration">500</item>
+    <item name="windowSplashScreenAnimationDuration">10000</item>
     <item name="postSplashScreenTheme">@style/Theme.App</item>
   </style>
 </resources>

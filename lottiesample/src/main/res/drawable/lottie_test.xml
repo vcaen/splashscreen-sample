@@ -30,6 +30,7 @@
       android:pivotX="35"
       android:pivotY="43">
     <path
+        android:name="red"
         android:pathData="M48.7995,41.4132A14.5363,14.0172 90,0 1,40.6685 55.3521,14.5363 14.0172,90 0,1 24.5562,52.3652L34.8322,42.4088Z"
         android:strokeAlpha="0.999"
         android:strokeLineJoin="bevel"
@@ -38,6 +39,7 @@
         android:strokeColor="#00000000"
         android:fillAlpha="0.999" />
     <path
+        android:name="blue"
         android:pathData="m31.4401,29.9633c2.2946,-0.4978 4.29,-0.9956 6.5347,0l-3.1427,12.4455z"
         android:strokeAlpha="0.999"
         android:strokeLineJoin="bevel"
@@ -46,6 +48,7 @@
         android:strokeColor="#00000000"
         android:fillAlpha="0.999" />
     <path
+        android:name="white1"
         android:pathData="m37.8252,29.4655c5.6867,1.4935 10.4755,6.4716 10.9245,12.4455l-13.8676,0.9956z"
         android:strokeAlpha="0.999"
         android:strokeLineJoin="bevel"
@@ -54,6 +57,7 @@
         android:strokeColor="#00000000"
         android:fillAlpha="0.999" />
     <path
+        android:name="white2"
         android:pathData="m24.9553,52.3652c-2.993,-3.4847 -4.4895,-8.9607 -3.2424,-13.4411 1.3469,-4.4804 5.2378,-7.9651 9.6774,-8.9607l3.2923,12.9433z"
         android:strokeAlpha="0.999"
         android:strokeLineJoin="bevel"
@@ -62,6 +66,7 @@
         android:strokeColor="#00000000"
         android:fillAlpha="0.999" />
     <path
+        android:name="stroke"
         android:pathData="m31.5399,29.9633 l3.442,12.9433c1.0974,-3.9825 1.7958,-8.9607 2.8932,-12.9433m-2.7436,12.9433 l-10.276,9.4585zM34.8322,42.9066 L48.6499,41.911m0.0998,0.9956c0,7.4673 -6.2354,13.9389 -13.9175,13.9389 -7.682,0 -13.4186,-6.4716 -13.4186,-13.9389 0,-7.4673 5.986,-13.4411 13.4186,-13.4411 7.4326,0 13.9175,5.9738 13.9175,13.4411z"
         android:strokeLineJoin="miter"
         android:strokeWidth="0.6"

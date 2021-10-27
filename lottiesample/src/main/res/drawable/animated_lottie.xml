@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
-    android:drawable="@drawable/lottie_test">
+                 xmlns:aapt="http://schemas.android.com/aapt"
+                 android:drawable="@drawable/lottie_test">
 
-  <target android:name="rotationGroup">
-    <aapt:attr name="android:animation">
-      <set>
-        <objectAnimator
-            android:duration="?windowSplashScreenAnimationDuration"
-            android:propertyName="rotation"
-            android:valueFrom="360"
-            android:valueTo="0"
-            android:interpolator="@android:anim/decelerate_interpolator"
-            />
-      </set>
-    </aapt:attr>
-  </target>
+    <target android:name="white1" android:animation="@animator/fade_in_out"/>
+    <target android:name="red" android:animation="@animator/fade_in_out"/>
+    <target android:name="blue" android:animation="@animator/fade_in_out"/>
+    <target android:name="white2" android:animation="@animator/fade_in_out"/>
+    <target android:name="stroke" android:animation="@animator/fade_in_out"/>
+    <target android:name="rotationGroup">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:duration="@integer/main_animation_duration"
+                    android:propertyName="rotation"
+                    android:valueFrom="360"
+                    android:valueTo="0"
+                    android:interpolator="@android:anim/decelerate_interpolator"
+                    />
+
+            </set>
+        </aapt:attr>
+    </target>
 </animated-vector>

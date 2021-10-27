@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+                android:startOffset="@integer/main_animation_duration"
+                android:duration="800"
+                android:repeatCount="200"
+                android:repeatMode="reverse"
+                android:interpolator="@android:anim/decelerate_interpolator">
+  <propertyValuesHolder
+      android:propertyName="fillAlpha"
+      android:valueFrom="1.0"
+      android:valueTo="0.5"
+      android:valueType="floatType" />
+  <propertyValuesHolder
+      android:propertyName="strokeAlpha"
+      android:valueFrom="1.0"
+      android:valueTo="0.5"
+      android:valueType="floatType" />
+</objectAnimator>

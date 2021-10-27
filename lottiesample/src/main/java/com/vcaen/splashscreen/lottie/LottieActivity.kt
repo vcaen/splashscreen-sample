@@ -3,6 +3,8 @@ package com.vcaen.splashscreen.lottie
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.view.ViewAnimationUtils
 import android.widget.ImageView
@@ -33,6 +35,11 @@ class LottieActivity : AppCompatActivity() {
         // Our content view contains the Lottie animation
         setContentView(R.layout.activity_lottie)
 
+        // Some fake loading time
+        var keepVisible = true
+        splashScreen.setKeepVisibleCondition { keepVisible }
+        Handler(Looper.getMainLooper()).postDelayed({ keepVisible = false }, 2000)
+
         // We set the OnExitAnimationListener to customize our splash screen animation.
         // This will allow us to take over the splash screen removal animation.
         splashScreen.setOnExitAnimationListener { vp ->
@@ -41,8 +48,9 @@ class LottieActivity : AppCompatActivity() {
 
             // We compute the delay to wait for the end of the splash screen icon
             // animation.
+            val iconAnimationDurationMillis = resources.getInteger(R.integer.main_animation_duration)
             val splashScreenAnimationEndTime =
-                Instant.ofEpochMilli(vp.iconAnimationStartMillis + vp.iconAnimationDurationMillis)
+                Instant.ofEpochMilli(vp.iconAnimationStartMillis + iconAnimationDurationMillis)
             val delay = Instant.now(Clock.systemUTC()).until(
                 splashScreenAnimationEndTime,
                 ChronoUnit.MILLIS

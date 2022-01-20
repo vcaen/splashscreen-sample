@@ -56,7 +56,7 @@ Here the important bits are:
 
 ```gradle
 dependencies {
-    implementation 'androidx.core:core-splashscreen:1.0.0-alpha02'
+    implementation 'androidx.core:core-splashscreen:1.0.0-beta01'
     def lottieVersion = "4.1.0"
     implementation "com.airbnb.android:lottie:$lottieVersion"
     ....

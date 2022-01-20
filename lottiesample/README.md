@@ -45,7 +45,7 @@ _Then why did you made this guide?_
 Because it was fun, it was a nice way to show off the API and people 
 like Lottie. But again, if you don't need it, don't do it. :)
 
-You appliation start should be as fast as possible and the splash screen 
+You appliaction start should be as fast as possible and the splash screen 
 should be dismissed as soon as you have some content to display.
 
 ## The actual story
